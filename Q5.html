@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <style>
+        .parent{
+            display: flex;
+            height: 100vh;
+            font-size: x-large;
+        }
+        
+            
+        
+       .middle{
+        width: 80%;
+        height: 100vh;
+       }
+       .child2,.child3{
+        height: 50%;
+       }
+       .child1,.child4{
+        width: 10%;
+        background-color: black;
+        color: aliceblue;
+       }
+       @media screen and (max-width:756px){
+        .parent{
+            display: flex;
+            flex-direction:column;
+            
+        }
+        .child1,.child4{
+        width: 100%;
+        height: 80px;
+       }
+       .child2,.child3{
+        height: 80px;
+        width: 100%;
+       }
+       .middle{
+        width: 100%;
+        height: 100vh;
+       }
+
+        
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">BOX-1</div>
+
+        <div class="middle" >
+          <div class="child child2" style="background-color: rgb(55, 132, 55);">BOX-2</div>
+          <div class="child child3" style="background-color: rgb(244, 103, 52);">BOX-3</div>
+
+        </div>
+        
+        <div class="child child4">BOX-4</div>
+    </div>
+    
+</body>
+</html>
